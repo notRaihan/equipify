@@ -57,12 +57,6 @@ header .logo-header a:hover {
     transform: scale(1.1);
     transition: transform 0.2s ease-in-out;
 }
-
-header nav ul a:hover {
-    margin-right: var(--space-xs);
-    transition: margin-right 0.2s ease-in-out;
-}
-
 header .logo-header .logo-text {
     font-family: var(--font-logo);
     font-weight: 600;
@@ -81,10 +75,28 @@ nav ul {
     margin: 0;
     list-style-type: none;
     padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
 }
+nav li {
+    margin: 0 var(--space-md);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+header nav ul li:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+
 nav li a{
     font-size: 1.6em;
     color: white;
+    text-decoration: none;
+}
+nav li:nth-child(2) {
+    font-family: var(--font-heading);
 }
 
 /* SLIDE ONE STYLING */
@@ -840,12 +852,9 @@ footer div.products a {
     letter-spacing: 0.15em;
 }
 
-footer .social-media_list li a:hover {
-    font-size: 1.5rem;
-    margin: var(--space-xs);
-
-    transition: margin 0.2s ease-in-out;
-    transition: font-size 0.2s ease-in-out;
+footer .social-media_list li:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
 }
 
 footer div.products a:hover {
